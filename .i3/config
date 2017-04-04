@@ -39,7 +39,8 @@ bindsym $mod+Shift+q kill
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu'
-bindsym $mod+Shift+d exec rofi -show ssh 
+bindsym $mod+Shift+d exec rofi -show ssh
+#bindsym $mod+Shift+d exec rofi -show window
 
 # change focus
 bindsym $mod+j focus left
@@ -144,12 +145,12 @@ mode "Exit (L)ogout, (S)uspend, (H)ibernate, (R)eboot, (P)oweroff" {
         bindsym $mod+h exec systemctl hibernate
         bindsym $mod+l exit
         bindsym $mod+p exec systemctl poweroff
- 
+
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
- 
+
 bindsym $mod+Shift+e mode "Exit (L)ogout, (S)uspend, (H)ibernate, (R)eboot, (P)oweroff"
 
 # resize window (you can also use the mouse for that)
@@ -190,9 +191,9 @@ bindsym --release $mod+Ctrl+p exec --no-startup-id import -resize 1600 /tmp/scre
 bindsym --release Print exec --no-startup-id import -resize 1600 /tmp/screenshot-`/bin/date +%Y%m%d-%H:%M:%S`.jpg
 
 #exec --no-startup-id ~/.screenlayout/multimonitor3.sh
-exec --no-startup-id ~/.screenlayout/multimonitor3-manual.sh
+#exec --no-startup-id ~/.screenlayout/multimonitor3-manual.sh
 exec --no-startup-id /usr/bin/nitrogen --restore
-exec --no-startup-id ~/go/bin/batterywarn
+#exec --no-startup-id ~/go/bin/batterywarn
 bindsym $mod+Ctrl+m exec --no-startup-id ~/.screenlayout/multimonitor3-manual.sh
 
 # Touchpad fix

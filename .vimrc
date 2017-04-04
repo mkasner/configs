@@ -146,6 +146,10 @@ nmap <Leader>f :GoInfo<CR>
 " zeza me kod c++
 let g:AutoPairsMapCR = 0
 
+runtime macros/matchit.vim
+
+" let vim_markdown_preview_toggle=1
+
 " nerdtree
 map <C-l> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
