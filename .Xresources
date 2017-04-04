@@ -1,0 +1,173 @@
+xscreensaver.splash: false
+
+!font settings
+xscreensaver.Dialog.headingFont:        -*-droid-sans-bold-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-droid-sans-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-droid-sans-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-droid-sans-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-droid-sans-bold-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-droid-sans-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-droid-sans-bold-r-*-*-12-*-*-*-*-*-*-*
+
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #ffffff
+xscreensaver.Dialog.background:         #373737
+xscreensaver.Dialog.topShadowColor:     #111111
+xscreensaver.Dialog.bottomShadowColor:  #111111
+xscreensaver.Dialog.Button.foreground:  #ffffff
+xscreensaver.Dialog.Button.background:  #666666
+
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #ffffff
+xscreensaver.Dialog.text.background:    #666666
+xscreensaver.Dialog.internalBorderWidth:0
+xscreensaver.Dialog.borderWidth:        0
+xscreensaver.Dialog.shadowThickness:    2
+
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #517BA9 
+xscreensaver.passwd.thermometer.background:  #000000
+xscreensaver.passwd.thermometer.width:       8
+
+!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:    %I:%M%P %b %d
+
+!Xterm settings
+XTerm*faceName: Bitstream Vera Serif Mono
+XTerm*faceSize: 10
+XTerm*vt100*geometry: 80x60
+XTerm*saveLines: 16384
+XTerm*loginShell: true
+XTerm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+XTerm*termName: XTerm-color
+XTerm*eightBitInput: false
+
+!!BLK Cursor
+!#define _color0        #000d18
+!#define _color8        #000d18
+!!RED Tag
+!#define _color1        #e89393
+!#define _color9        #e89393
+!!GRN SpecialKey
+!#define _color2        #9ece9e
+!#define _color10       #9ece9e
+!!YEL Keyword
+!#define _color3        #f0dfaf
+!#define _color11       #f0dfaf
+!!BLU Number
+!#define _color4        #8cd0d3
+!#define _color12       #8cd0d3
+!!MAG Precondit
+!#define _color5        #c0bed1
+!#define _color13       #c0bed1
+!!CYN Float
+!#define _color6        #dfaf8f
+!#define _color14       #dfaf8f
+!!WHT Search
+!#define _color7        #efefef
+!#define _color15       #efefef
+!!FMT Include, StatusLine, ErrorMsg
+!#define _colorBD       #ffcfaf
+!#define _colorUL       #ccdc90
+!#define _colorIT       #80d4aa
+!!TXT Normal, Normal, Cursor
+!#define _foreground    #dcdccc
+!#define _background    #1f1f1f
+!#define _cursorColor   #8faf9f
+!
+!XTerm*color0         : _color0
+!XTerm*color1         : _color1
+!XTerm*color2         : _color2
+!XTerm*color3         : _color3
+!XTerm*color4         : _color4
+!XTerm*color5         : _color5
+!XTerm*color6         : _color6
+!XTerm*color7         : _color7
+!XTerm*color8         : _color8
+!XTerm*color9         : _color9
+!XTerm*color10        : _color10
+!XTerm*color11        : _color11
+!XTerm*color12        : _color12
+!XTerm*color13        : _color13
+!XTerm*color14        : _color14
+!XTerm*color15        : _color15
+!XTerm*colorBD        : _colorBD
+!XTerm*colorIT        : _colorIT
+!XTerm*colorUL        : _colorUL
+!XTerm*foreground     : _foreground
+!XTerm*background     : _background
+!XTerm*cursorColor    : _cursorColor
+
+!Solarized dark
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+
+*background:            S_base03
+*foreground:            S_base0
+*fadeColor:             S_base03
+*cursorColor:           S_base1
+*pointerColorBackground:S_base01
+*pointerColorForeground:S_base1
+
+XTerm*background:            S_base03
+XTerm*foreground:            S_base0
+XTerm*fadeColor:             S_base03
+XTerm*cursorColor:           S_base1
+XTerm*pointerColorBackground:S_base01
+XTerm*pointerColorForeground:S_base1
+
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+
+!! black dark/light
+XTerm*color0:                S_base02
+XTerm*color8:                S_base03
+
+!! red dark/light
+XTerm*color1:                S_red
+XTerm*color9:                S_orange
+
+!! green dark/light
+XTerm*color2:                S_green
+XTerm*color10:               S_base01
+
+!! yellow dark/light
+XTerm*color3:                S_yellow
+XTerm*color11:               S_base00
+
+!! blue dark/light
+XTerm*color4:                S_blue
+XTerm*color12:               S_base0
+
+!! magenta dark/light
+XTerm*color5:                S_magenta
+XTerm*color13:               S_violet
+
+!! cyan dark/light
+XTerm*color6:                S_cyan
+XTerm*color14:               S_base1
+
+!! white dark/light
+XTerm*color7:                S_base2
+XTerm*color15:               S_base3
+
+
+XTerm*selectToClipboard: true
+
+rofi.background: #222
+rofi.foreground: #888
+rofi.bordercolor: #222
+rofi.highlightbg: #285577
+rofi.highlightfg: #fff
