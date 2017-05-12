@@ -144,7 +144,7 @@ nmap =j :%!python -m json.tool<CR>
 nmap <Leader>f :GoInfo<CR>
 
 " zeza me kod c++
-let g:AutoPairsMapCR = 0
+"let g:AutoPairsMapCR = 0
 
 runtime macros/matchit.vim
 

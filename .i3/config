@@ -204,3 +204,5 @@ exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Tap
 # launch terminal same path
 #bindsym $mod+Shift+Return exec xterm -e "cd `xcwd` && /bin/bash"
 bindsym $mod+Shift+Return exec xterm -e "cd `xcwd` && /bin/zsh"
+
+exec_always --no-startup-id xrdb -load ~/.Xresources
