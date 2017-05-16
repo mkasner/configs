@@ -144,3 +144,7 @@ let vim_markdown_preview_toggle=1
 
 map <C-l> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+"sql workbench
+let g:sw_config_dir='/home/kmislav/.sqlworkbench'
+let g:sw_exe='/home/kmislav/Programs/Workbench-Build122/sqlwbconsole.sh'
