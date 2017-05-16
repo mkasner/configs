@@ -39,8 +39,8 @@ bindsym $mod+Shift+q kill
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu='rofi -dmenu'
-#bindsym $mod+Shift+d exec rofi -show ssh 
-bindsym $mod+Shift+d exec rofi -show window
+bindsym $mod+Shift+d exec rofi -show ssh
+#bindsym $mod+Shift+d exec rofi -show window
 
 # change focus
 bindsym $mod+j focus left
@@ -145,12 +145,12 @@ mode "Exit (L)ogout, (S)uspend, (H)ibernate, (R)eboot, (P)oweroff" {
         bindsym $mod+h exec systemctl hibernate
         bindsym $mod+l exit
         bindsym $mod+p exec systemctl poweroff
- 
+
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
- 
+
 bindsym $mod+Shift+e mode "Exit (L)ogout, (S)uspend, (H)ibernate, (R)eboot, (P)oweroff"
 
 # resize window (you can also use the mouse for that)
@@ -204,3 +204,5 @@ exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Tap
 # launch terminal same path
 #bindsym $mod+Shift+Return exec xterm -e "cd `xcwd` && /bin/bash"
 bindsym $mod+Shift+Return exec xterm -e "cd `xcwd` && /bin/zsh"
+
+exec_always --no-startup-id xrdb -load ~/.Xresources

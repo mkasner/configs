@@ -91,8 +91,8 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 
 " Silver searcher ag
-" maybe dont' want to include from project start
-" let g:ag_working_path_mode="r"
+" dont't want to search within root of project
+"let g:ag_working_path_mode="r"
 
 " Vorax
 let g:vorax_limit_rows=50
@@ -135,16 +135,28 @@ let b:closetag_html_style=1
 
 set synmaxcol=540
 
-nmap <leader>f :GoInfo<cr>
+" Customize html-beautify
+let g:formatdef_custom_htmlbeautify = '"html-beautify -f - -U script -U style -E /script -s ".shiftwidth()'
+let g:formatters_html = ['custom_htmlbeautify']
+
+nmap =x :%!xmllint --format -<CR>
 nmap =j :%!python -m json.tool<CR>
+nmap <Leader>f :GoInfo<CR>
+
+" zeza me kod c++
+"let g:AutoPairsMapCR = 0
 
 runtime macros/matchit.vim
 
-let vim_markdown_preview_toggle=1
+" let vim_markdown_preview_toggle=1
 
+" nerdtree
 map <C-l> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "sql workbench
 let g:sw_config_dir='/home/kmislav/.sqlworkbench'
 let g:sw_exe='/home/kmislav/Programs/Workbench-Build122/sqlwbconsole.sh'
+"Proto
+let g:formatdef_my_proto = '"clang-format -style=llvm"'
+let g:formatters_proto = ['my_proto']
